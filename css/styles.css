@@ -648,6 +648,8 @@ footer {
 }
 
 .section-text.footer {
+  margin-bottom: 20px;
+
   color: var(--white-color);
 
   font-weight: bold;
@@ -660,11 +662,8 @@ footer {
   flex-direction: column;
 
   width: 206px;
+  height: 80px;
   margin-left: 70px;
-}
-
-.section-text.footer {
-  margin-bottom: 20px;
 }
 
 .social-list.footer {
@@ -689,6 +688,53 @@ footer {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.form.footer {
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+}
+
+.form.footer .newsletter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form.footer input {
+  width: 358px;
+  height: 50px;
+
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.newsletter input[placeholder] {
+  display: flex;
+  align-items: center;
+  padding: 15px 16px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.newsletter {
+  display: flex;
+}
+
+.newsletter-button {
+  display: flex;
+
+  width: 143px;
+  height: 30px;
+}
+
+.newsletter-icon {
+  margin-left: 10px;
 }
 
 .backdrop {
@@ -744,9 +790,9 @@ footer {
   cursor: pointer;
 }
 
-.form {
-  width: 528px;
-  height: 581px;
+.form-modal {
+  display: flex;
+  flex-direction: column;
 
   padding: 40px;
 
@@ -756,7 +802,7 @@ footer {
   border-radius: 4px;
 }
 
-.form-text {
+.form-modal-text {
   margin-top: 0;
   margin-bottom: 12px;
 
@@ -779,7 +825,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.form-field label {
+.form-field-label {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -787,22 +833,59 @@ footer {
   letter-spacing: 0.01em;
 }
 
-.form-field input {
+.input-overlay {
+  position: relative;
+}
+
+.form-field-input {
+  width: 100%;
+  height: 100%;
   padding: 11px 12px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
+.form-field-input:focus + .input-icon {
+  fill: var(--accent-color);
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
 .form-field textarea {
   padding: 12px 16px;
+  height: 120px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.form-field textarea[placeholder] {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .terms {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  margin-bottom: 30px;
+}
+
+.terms-link {
+  color: var(--accent-color);
+}
+
+.form .button.primary {
+  width: 200px;
+  height: 50px;
 }
