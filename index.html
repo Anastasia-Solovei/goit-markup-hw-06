@@ -489,11 +489,16 @@
           </ul>
         </div>
 
-        <form class="form footer">
+        <form class="form footer" autocomplete="off">
           <p class="section-text footer">Подпишитесь на рассылку</p>
 
           <div class="newsletter">
-            <input type="email" name="mail" placeholder="E-mail" />
+            <input
+              class="newsletter-input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
             <button class="button primary" type="submit">
               <div class="newsletter-button">
                 Подписаться
@@ -516,8 +521,10 @@
           </svg>
         </button>
 
-        <form class="form-modal">
-          <p class="form-modal-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="form-modal" autocomplete="off">
+          <h3 class="form-modal-title section-subtitle">
+            Оставьте свои данные, мы вам перезвоним
+          </h3>
 
           <div class="form-field">
             <label class="form-label">Имя</label>
@@ -559,9 +566,14 @@
           </div>
 
           <div class="terms">
-            <input type="checkbox" name="terms" id="accept-terms" />
-            <label for="accept-terms"
-              >Соглашаюсь с рассылкой и принимаю
+            <label class="terms-label">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="terms"
+              />
+              <span class="checkbox-icon"></span>
+              Соглашаюсь с рассылкой и принимаю
               <a class="terms-link" href="">Условия договора</a>
             </label>
           </div>
