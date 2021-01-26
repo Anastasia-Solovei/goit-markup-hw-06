@@ -18,41 +18,47 @@
 
   <body>
     <!-----------------------------Шапка сайта-------------------------------------->
-    <header>
+    <header class="page-header section">
       <div class="container main-nav">
         <a href="/index.html" class="logo"
-          >Web<span class="header">Studio</span>
+          >Web<span class="logo__text">Studio</span>
         </a>
 
         <!--------------------------Меню навигации------------------------------------>
         <nav>
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Студия</a>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Контакты</a>
+
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <!------------------------------Контакты------------------------------------->
-        <ul class="contacts-list list">
-          <li class="contacts-item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16" height="12">
+        <ul class="contact__list list">
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="contacts-item">
-            <a class="contacts-link" href="tel:+380961111111">
-              <svg class="contact-icon" width="10" height="16">
+          <li class="contact__item">
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -89,9 +95,9 @@
 
           <!-- Проекты -->
           <h2 hidden>Проекты</h2>
-          <ul class="project-list section-list list">
-            <li class="project-item">
-              <a class="project-link" href="#">
+          <ul class="card__set section-list list">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project1.jpg"
@@ -107,15 +113,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle">Технокряк</h3>
-                  <p class="project-text section-text">Веб-сайт</p>
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle">Технокряк</h3>
+                  <p class="project__text section-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a class="project-link" href="#">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project2.jpg"
@@ -131,17 +137,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle">
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h3>
-                  <p class="project-text section-text">Дизайн</p>
+                  <p class="project__text section-text">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a class="project-link" href="#">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project3.jpg"
@@ -157,17 +163,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle">
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle">
                     Ресторан <span lang="en">Seafood</span>
                   </h3>
-                  <p class="project-text section-text">Приложение</p>
+                  <p class="project__text section-text">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a class="project-link" href="#">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project4.jpg"
@@ -183,17 +189,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle">
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle">
                     Проект <span lang="en">Prime</span>
                   </h3>
-                  <p class="project-text section-text">Маркетинг</p>
+                  <p class="project__text section-text">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a class="project-link" href="#">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project5.jpg"
@@ -209,17 +215,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle">
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle">
                     Проект <span lang="en">Boxes</span>
                   </h3>
-                  <p class="project-text section-text">Приложение</p>
+                  <p class="project__text section-text">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a class="project-link" href="#">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project6.jpg"
@@ -235,17 +241,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle" lang="en">
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle" lang="en">
                     Inspiration has no Borders
                   </h3>
-                  <p class="project-text section-text">Веб-сайт</p>
+                  <p class="project__text section-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a class="project-link" href="#">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project7.jpg"
@@ -261,17 +267,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle">
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle">
                     Издание <span lang="en">Limited Edition</span>
                   </h3>
-                  <p class="project-text section-text">Дизайн</p>
+                  <p class="project__text section-text">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a class="project-link" href="#">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project8.jpg"
@@ -287,17 +293,17 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle">
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle">
                     Проект <span lang="en">LAB</span>
                   </h3>
-                  <p class="project-text section-text">Маркетинг</p>
+                  <p class="project__text section-text">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a class="project-link" href="#">
+            <li class="card__item">
+              <a class="card__link" href="#">
                 <div class="project-photo">
                   <img
                     src="./images/project9.jpg"
@@ -313,11 +319,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="project-description">
-                  <h3 class="project-title section-subtitle" lang="en">
+                <div class="project__label">
+                  <h3 class="project__title section-subtitle" lang="en">
                     Growing Business
                   </h3>
-                  <p class="project-text section-text">Приложение</p>
+                  <p class="project__text section-text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -327,24 +333,25 @@
     </main>
 
     <!----------------------------Подвал сайта-------------------------------------->
-    <footer class="section footer">
+    <footer class="page-footer section">
       <div class="container footer">
         <div class="adress-footer-wrapper">
-          <a href="/index.html" class="logo footer"
-            >Web<span class="footer">Studio</span>
+          <a href="/index.html" class="logo page-footer__logo"
+            >Web<span class="logo__text logo__text--inverse">Studio</span>
           </a>
 
           <address>
             <span class="address">г. Киев, пр-т Леси Украинки, 26<br /></span>
 
-            <ul class="contacts-list footer list">
-              <li class="contacts-item footer">
-                <a class="contacts-link footer" href="mailto:info@example.com"
+            <ul class="contact__list footer list">
+              <li class="contact__item footer">
+                <a class="contact__link footer" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="contacts-item footer">
-                <a class="contacts-link footer" href="tel:+380991111111"
+
+              <li class="contact__item footer">
+                <a class="contact__link footer" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -352,37 +359,37 @@
           </address>
         </div>
 
-        <div class="social-footer-wrapper">
+        <div class="social__content">
           <p class="section-text footer">присоединяйтесь</p>
 
-          <ul class="social-list footer list">
-            <li class="social-item footer">
-              <a href="" class="social-link footer">
-                <svg class="social-icon footer">
+          <ul class="social__list footer list">
+            <li class="social__item footer">
+              <a href="" class="social__link footer">
+                <svg class="social__icon footer">
                   <use href="./images/icons.svg#icon-instagram-f"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-item footer">
-              <a href="" class="social-link footer">
-                <svg class="social-icon footer">
+            <li class="social__item footer">
+              <a href="" class="social__link footer">
+                <svg class="social__icon footer">
                   <use href="./images/icons.svg#icon-twitter-f"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-item footer">
-              <a href="" class="social-link footer">
-                <svg class="social-icon footer">
+            <li class="social__item footer">
+              <a href="" class="social__link footer">
+                <svg class="social__icon footer">
                   <use href="./images/icons.svg#icon-facebook-f"></use>
                 </svg>
               </a>
             </li>
 
-            <li class="social-item footer">
-              <a href="" class="social-link footer">
-                <svg class="social-icon footer">
+            <li class="social__item footer">
+              <a href="" class="social__link footer">
+                <svg class="social__icon footer">
                   <use href="./images/icons.svg#icon-linkedin-f"></use>
                 </svg>
               </a>
