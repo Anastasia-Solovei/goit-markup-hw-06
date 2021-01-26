@@ -926,8 +926,6 @@ footer {
 
   background-image: url(../images/check-off.svg);
   border-radius: 2px;
-  transition: background-image background-color var(--primary-duration)
-    var(--timing-function);
 }
 
 .checkbox:checked + .checkbox-icon {
